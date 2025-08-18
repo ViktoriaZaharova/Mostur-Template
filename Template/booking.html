@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mos-Tour</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/slick/slick.css" />
+  <link rel="stylesheet" href="assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="assets/vendor/select2/select2.min.css" />
+  <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.min.css" />
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="mobile-menu">
+    <div class="btn-close-menu"></div>
+    <a href="index.html" class="logo"><img src="assets/images/logo-min.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="tour-page.html">Individual tours</a></li>
+      <li><a href="certificates.html">Gift certificates</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+    <a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+  </div>
+
+  <header class="header-page">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-6 col-md-3 col-sm-3 col-xl-2">
+          <a href="index.html" class="logo"><img src="assets/images/logo-min.svg" alt=""></a>
+        </div>
+        <div class="col-6 d-none d-xl-flex">
+          <ul class="menu">
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="tour-page.html">Individual tours</a></li>
+            <li><a href="certificates.html">Gift certificates</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-9 col-sm-9 col-xl-4 d-none d-sm-flex align-items-center">
+          <form method="post" class="form-search">
+            <label><input type="text" placeholder="To start searching" required></label>
+            <button type="submit">
+              <svg class="svg-icon">
+                <use xlink:href="assets/images/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          <a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+        </div>
+
+        <div class="col-6 d-flex d-sm-none">
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="page-section page-certificates page-payment-tour page-booking">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="tour-page.html">Tour Page</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Tour booking</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col-12">
+          <form method="post" class="form-certificate form-payment-tour form-booking">
+            <div class="row">
+              <div class="col-12">
+                <h1>Tour booking</h1>
+
+              </div>
+
+              <div class="col-12">
+                <div class="form-certificate-wrap__box form-certificate-wrap__box-total">
+                  <h3>Select tour start date</h3>
+                  <div class="datepicker-wrapper">
+                    <div class="datepicker-top">
+                      <div class="datepicker"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-certificate-wrap__box form-certificate-wrap__box-total">
+                  <h3>Hotel</h3>
+
+                  <div class="hotel-variable">
+                    <label class="hotel-variable-check">
+                      <input type="radio" name="radio2" class="hotel-variable-check__inp">
+                      <span class="hotel-variable-check__img"><img src="assets/images/hotel.png" alt=""></span>
+                      <span class="hotel-variable-check__text">
+                        <span class="hotel-variable-check__top">
+                          <span class="rating">
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                          </span>
+                          <span class="hotel-variable-check__icon-check"><img src="assets/images/check-blue.svg"
+                              alt=""></span>
+                          <span class="hotel-variable-check__price">from 12 280 ₽</span>
+                        </span>
+
+                        <span class="hotel-variable-check__body">
+                          <span class="hotel-variable-check__title">
+                            <strong>Guest House</strong>
+                            "Villa Tatiana"
+                          </span>
+                        </span>
+
+                        <span class="hotel-variable-check__bottom">
+                          <a href="#" class="links-details">More</a>
+                          <span class="hotel-variable-check__custom"></span>
+                        </span>
+
+                      </span>
+                    </label>
+                    <label class="hotel-variable-check">
+                      <input type="radio" name="radio2" class="hotel-variable-check__inp">
+                      <span class="hotel-variable-check__img"><img src="assets/images/hotel.png" alt=""></span>
+                      <span class="hotel-variable-check__text">
+                        <span class="hotel-variable-check__top">
+                          <span class="rating">
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                          </span>
+                          <span class="hotel-variable-check__icon-check"><img src="assets/images/check-blue.svg"
+                              alt=""></span>
+                          <span class="hotel-variable-check__price">from 12 280 ₽</span>
+                        </span>
+
+                        <span class="hotel-variable-check__body">
+                          <span class="hotel-variable-check__title">
+                            <strong>Guest House</strong>
+                            "Villa Tatiana"
+                          </span>
+                        </span>
+
+                        <span class="hotel-variable-check__bottom">
+                          <a href="#" class="links-details">More</a>
+                          <span class="hotel-variable-check__custom"></span>
+                        </span>
+
+                      </span>
+                    </label>
+                    <label class="hotel-variable-check">
+                      <input type="radio" name="radio2" class="hotel-variable-check__inp">
+                      <span class="hotel-variable-check__img"><img src="assets/images/hotel.png" alt=""></span>
+                      <span class="hotel-variable-check__text">
+                        <span class="hotel-variable-check__top">
+                          <span class="rating">
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                          </span>
+                          <span class="hotel-variable-check__icon-check"><img src="assets/images/check-blue.svg"
+                              alt=""></span>
+                          <span class="hotel-variable-check__price">from 12 280 ₽</span>
+                        </span>
+
+                        <span class="hotel-variable-check__body">
+                          <span class="hotel-variable-check__title">
+                            <strong>Guest House</strong>
+                            "Villa Tatiana"
+                          </span>
+                        </span>
+
+                        <span class="hotel-variable-check__bottom">
+                          <a href="#" class="links-details">More</a>
+                          <span class="hotel-variable-check__custom"></span>
+                        </span>
+
+                      </span>
+                    </label>
+                    <label class="hotel-variable-check">
+                      <input type="radio" name="radio2" class="hotel-variable-check__inp" checked>
+                      <span class="hotel-variable-check__img"><img src="assets/images/hotel.png" alt=""></span>
+                      <span class="hotel-variable-check__text">
+                        <span class="hotel-variable-check__top">
+                          <span class="rating">
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                          </span>
+                          <span class="hotel-variable-check__icon-check"><img src="assets/images/check-blue.svg"
+                              alt=""></span>
+                          <span class="hotel-variable-check__price">from 12 280 ₽</span>
+                        </span>
+
+                        <span class="hotel-variable-check__body">
+                          <span class="hotel-variable-check__title">
+                            <strong>Guest House</strong>
+                            "Villa Tatiana"
+                          </span>
+                        </span>
+
+                        <span class="hotel-variable-check__bottom">
+                          <a href="#" class="links-details">More</a>
+                          <span class="hotel-variable-check__custom"></span>
+                        </span>
+
+                      </span>
+                    </label>
+                    <label class="hotel-variable-check">
+                      <input type="radio" name="radio2" class="hotel-variable-check__inp">
+                      <span class="hotel-variable-check__img"><img src="assets/images/hotel.png" alt=""></span>
+                      <span class="hotel-variable-check__text">
+                        <span class="hotel-variable-check__top">
+                          <span class="rating">
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                          </span>
+                          <span class="hotel-variable-check__icon-check"><img src="assets/images/check-blue.svg"
+                              alt=""></span>
+                          <span class="hotel-variable-check__price">from 12 280 ₽</span>
+                        </span>
+
+                        <span class="hotel-variable-check__body">
+                          <span class="hotel-variable-check__title">
+                            <strong>Guest House</strong>
+                            "Villa Tatiana"
+                          </span>
+                        </span>
+
+                        <span class="hotel-variable-check__bottom">
+                          <a href="#" class="links-details">More</a>
+                          <span class="hotel-variable-check__custom"></span>
+                        </span>
+
+                      </span>
+                    </label>
+                    <label class="hotel-variable-check">
+                      <input type="radio" name="radio2" class="hotel-variable-check__inp">
+                      <span class="hotel-variable-check__img"><img src="assets/images/hotel.png" alt=""></span>
+                      <span class="hotel-variable-check__text">
+                        <span class="hotel-variable-check__top">
+                          <span class="rating">
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                          </span>
+                          <span class="hotel-variable-check__icon-check"><img src="assets/images/check-blue.svg"
+                              alt=""></span>
+                          <span class="hotel-variable-check__price">from 12 280 ₽</span>
+                        </span>
+
+                        <span class="hotel-variable-check__body">
+                          <span class="hotel-variable-check__title">
+                            <strong>Guest House</strong>
+                            "Villa Tatiana"
+                          </span>
+                        </span>
+
+                        <span class="hotel-variable-check__bottom">
+                          <a href="#" class="links-details">More</a>
+                          <span class="hotel-variable-check__custom"></span>
+                        </span>
+
+                      </span>
+                    </label>
+                    <label class="hotel-variable-check">
+                      <input type="radio" name="radio2" class="hotel-variable-check__inp">
+                      <span class="hotel-variable-check__img"><img src="assets/images/hotel.png" alt=""></span>
+                      <span class="hotel-variable-check__text">
+                        <span class="hotel-variable-check__top">
+                          <span class="rating">
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                          </span>
+                          <span class="hotel-variable-check__icon-check"><img src="assets/images/check-blue.svg"
+                              alt=""></span>
+                          <span class="hotel-variable-check__price">from 12 280 ₽</span>
+                        </span>
+
+                        <span class="hotel-variable-check__body">
+                          <span class="hotel-variable-check__title">
+                            <strong>Guest House</strong>
+                            "Villa Tatiana"
+                          </span>
+                        </span>
+
+                        <span class="hotel-variable-check__bottom">
+                          <a href="#" class="links-details">More</a>
+                          <span class="hotel-variable-check__custom"></span>
+                        </span>
+
+                      </span>
+                    </label>
+                    <label class="hotel-variable-check">
+                      <input type="radio" name="radio2" class="hotel-variable-check__inp">
+                      <span class="hotel-variable-check__img"><img src="assets/images/hotel.png" alt=""></span>
+                      <span class="hotel-variable-check__text">
+                        <span class="hotel-variable-check__top">
+                          <span class="rating">
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                          </span>
+                          <span class="hotel-variable-check__icon-check"><img src="assets/images/check-blue.svg"
+                              alt=""></span>
+                          <span class="hotel-variable-check__price">from 12 280 ₽</span>
+                        </span>
+
+                        <span class="hotel-variable-check__body">
+                          <span class="hotel-variable-check__title">
+                            <strong>Guest House</strong>
+                            "Villa Tatiana"
+                          </span>
+                        </span>
+
+                        <span class="hotel-variable-check__bottom">
+                          <a href="#" class="links-details">More</a>
+                          <span class="hotel-variable-check__custom"></span>
+                        </span>
+
+                      </span>
+                    </label>
+                    <label class="hotel-variable-check">
+                      <input type="radio" name="radio2" class="hotel-variable-check__inp">
+                      <span class="hotel-variable-check__img"><img src="assets/images/hotel.png" alt=""></span>
+                      <span class="hotel-variable-check__text">
+                        <span class="hotel-variable-check__top">
+                          <span class="rating">
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                            <span class="rating-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="assets/images/sprite.svg#star"></use>
+                              </svg>
+                            </span>
+                          </span>
+                          <span class="hotel-variable-check__icon-check"><img src="assets/images/check-blue.svg"
+                              alt=""></span>
+                          <span class="hotel-variable-check__price">from 12 280 ₽</span>
+                        </span>
+
+                        <span class="hotel-variable-check__body">
+                          <span class="hotel-variable-check__title">
+                            <strong>Guest House</strong>
+                            "Villa Tatiana"
+                          </span>
+                        </span>
+
+                        <span class="hotel-variable-check__bottom">
+                          <a href="#" class="links-details">More</a>
+                          <span class="hotel-variable-check__custom"></span>
+                        </span>
+
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-certificate-wrap__box form-certificate-wrap__box-total">
+                  <h3>Who goes</h3>
+
+                  <div class="number-of-guests">
+                    <div class="number-of-guests__icon"><img src="assets/images/number-guest1.svg" alt=""></div>
+                    <div class="number-of-guests__text">
+                      <h4>Adults</h4><span>Age from 17</span>
+                    </div>
+                    <div class="amount">
+                      <span class="down"><svg class="svg-icon">
+                          <use xlink:href="assets/images/sprite.svg#minus"></use>
+                        </svg></span>
+                      <input type="text" value="1" />
+                      <span class="up"><svg class="svg-icon">
+                          <use xlink:href="assets/images/sprite.svg#plus"></use>
+                        </svg></span>
+                    </div>
+                  </div>
+                  <div class="number-of-guests">
+                    <div class="number-of-guests__icon"><img src="assets/images/number-guest2.svg" alt=""></div>
+                    <div class="number-of-guests__text">
+                      <h4>Children</h4><span>Age: 5-17</span>
+                    </div>
+                    <div class="amount">
+                      <span class="down"><svg class="svg-icon">
+                          <use xlink:href="assets/images/sprite.svg#minus"></use>
+                        </svg></span>
+                      <input type="text" value="1" />
+                      <span class="up"><svg class="svg-icon">
+                          <use xlink:href="assets/images/sprite.svg#plus"></use>
+                        </svg></span>
+                    </div>
+                  </div>
+
+                  <div class="number-of-guests">
+                    <div class="number-of-guests__icon"><img src="assets/images/number-guest3.svg" alt=""></div>
+                    <div class="number-of-guests__text">
+                      <h4>Babies</h4><span>Age: 0-2</span>
+                    </div>
+                    <div class="amount">
+                      <span class="down"><svg class="svg-icon">
+                          <use xlink:href="assets/images/sprite.svg#minus"></use>
+                        </svg></span>
+                      <input type="text" value="1" />
+                      <span class="up"><svg class="svg-icon">
+                          <use xlink:href="assets/images/sprite.svg#plus"></use>
+                        </svg></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-certificate-wrap__box form-certificate-wrap__box-total">
+                  <h3>Accommodation options</h3>
+                  <div class="row">
+                    <div class="col-12 col-xl-8">
+                      <label class="check-in-option">
+                        <input type="radio" name="radio" class="check-in-option__inp">
+                        <span class="check-in-option__top">
+                          <span class="check-in-option__top-title">Option 1</span>
+                          <span class="check-in-option__inp-custom"><img src="assets/images/check-blue.svg"
+                              alt=""></span>
+                          <span class="price-check">78 770 ₽</span>
+                        </span>
+                        <span class="check-in-option__body">
+                          <span class="check-in-option__list">
+                            <span class="check-in-option__item">
+                              <span class="check-in-option__icon"><img src="assets/images/family.svg" alt=""></span>
+                              <span class="check-in-option__text">
+                                <span class="check-in-option__text-title">Double Room</span>
+                                <span>1 double bed</span>
+                                <span>1 single bed</span>
+                              </span>
+                              <span class="check-in-option__bottom">
+                                <span class="check-in-option__bottom-icon"><img src="assets/images/bed1.svg"
+                                    alt=""></span>
+                                <span class="check-in-option__bottom-icon"><img src="assets/images/bed2.svg"
+                                    alt=""></span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </label>
+
+                      <label class="check-in-option">
+                        <input type="radio" name="radio" class="check-in-option__inp" checked>
+                        <span class="check-in-option__top">
+                          <span class="check-in-option__top-title">Option 1</span>
+                          <span class="check-in-option__inp-custom"><img src="assets/images/check-blue.svg"
+                              alt=""></span>
+                          <span class="price-check">78 770 ₽</span>
+                        </span>
+                        <span class="check-in-option__body">
+                          <span class="check-in-option__list">
+                            <span class="check-in-option__item">
+                              <span class="check-in-option__icon"><img src="assets/images/family.svg" alt=""></span>
+                              <span class="check-in-option__text">
+                                <span class="check-in-option__text-title">Double Room</span>
+                                <span>1 double bed</span>
+                                <span>1 single bed</span>
+                              </span>
+                              <span class="check-in-option__bottom">
+                                <span class="check-in-option__bottom-icon"><img src="assets/images/bed1.svg"
+                                    alt=""></span>
+                                <span class="check-in-option__bottom-icon"><img src="assets/images/bed2.svg"
+                                    alt=""></span>
+                              </span>
+                            </span>
+
+                            <span class="check-in-option__item">
+                              <span class="check-in-option__icon"><img src="assets/images/family.svg" alt=""></span>
+                              <span class="check-in-option__text">
+                                <span class="check-in-option__text-title">Double Room</span>
+                                <span>2 single beds</span>
+                              </span>
+                              <span class="check-in-option__bottom">
+                                <span class="check-in-option__bottom-icon"><img src="assets/images/bed2.svg"
+                                    alt=""></span>
+                                <span class="check-in-option__bottom-icon"><img src="assets/images/bed2.svg"
+                                    alt=""></span>
+                              </span>
+                            </span>
+
+                            <span class="check-in-option__item">
+                              <span class="check-in-option__icon"><img src="assets/images/family.svg" alt=""></span>
+                              <span class="check-in-option__text">
+                                <span class="check-in-option__text-title">Double Room</span>
+                                <span>1 double bed</span>
+                              </span>
+                              <span class="check-in-option__bottom">
+                                <span class="check-in-option__bottom-icon"><img src="assets/images/bed1.svg"
+                                    alt=""></span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-certificate-wrap__box form-certificate-wrap__box-total">
+                  <h3>Total</h3>
+                  <div class="row">
+                    <div class="col-12 col-lg-8">
+
+                      <div class="total-position">
+                        <div class="total-position__icon"><img src="assets/images/total-icon1.svg" alt=""></div>
+                        <p>Gastronomic train to Udmurtia "Delicious Going!"</p>
+                      </div>
+                      <div class="total-position">
+                        <div class="total-position__icon"><img src="assets/images/total-icon2.svg" alt=""></div>
+                        <p>April 30, 2021</p>
+                      </div>
+                      <div class="total-position">
+                        <div class="total-position__icon"><img src="assets/images/total-icon3.svg" alt=""></div>
+                        <p>3 adults, 4 children</p>
+                      </div>
+                      <div class="total-position">
+                        <div class="total-position__icon"><img src="assets/images/total-icon4.svg" alt=""></div>
+                        <p>Park Inn by Radisson, 2 double rooms</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-8">
+                <div class="form-booking__total">
+                  <p>Price:</p>
+                  <div class="sum">81 540 ₽</div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <a href="tour-payment.html" class="btn btn-orange button">Book / pay</a>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4 order-lg-1">
+            <div class="footer-box">
+              <span>Multichannel</span>
+              <a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+              <a href="tel:+70000071313" class="phone">8 (800) 007-13-13</a>
+              <a href="mailto:zakaz-test@gmail.com" class="mail">zakaz-test@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-5 col-lg-3 offset-md-2 offset-lg-1 d-none d-md-flex">
+            <ul class="footer-menu">
+              <li><a href="about.html">About company</a></li>
+              <li><a href="document.html">Juristic documents</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-5 col-lg-4">
+            <ul class="footer-menu">
+              <li><a href="tour-payment.html">Payment Methods</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="certificates.html">Gift certificates</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-xl-4 order-xl-1">
+            <ul class="list-social">
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#phone"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#telegram"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#vk"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#fb"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#instagram"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#twitter"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#youtube"></use>
+                  </svg>
+                </a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-xl-8">
+            <ul class="menu-document list-dots">
+              <li>
+                <div class="copyright">© 2006–2023 Mos-Tour Company</div>
+              </li>
+              <li><a href="#">Confidentiality</a></li>
+              <li><a href="#">Conditions</a></li>
+              <li><a href="#">Company details</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal fade" id="modalDetails1" tabindex="-1" aria-labelledby="modalDetails1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-subtitle">Tour to Kaliningrad</div>
+          <h5 class="modal-title">"Amber wind of the Baltic"</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg class="svg-icon">
+              <use xlink:href="assets/images/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="tour-details-modal">
+            <div class="tour-details-modal-box">
+              <h4>Duration</h4>
+              <ul class="list-time-tours list-dots">
+                <li>1 day</li>
+                <li>2 days / 1 night</li>
+                <li>3 days / 2 nights</li>
+                <li>4 days / 3 nights</li>
+                <li>5 days / 4 nights</li>
+                <li>6 days / 5 nights</li>
+                <li>7 days / 6 nights</li>
+                <li>8 days / 7 nights</li>
+              </ul>
+            </div>
+
+            <div class="tour-details-modal-box">
+              <h4>Season</h4>
+              <ul class="list-season-tours">
+                <li>January</li>
+                <li>February</li>
+                <li>March</li>
+                <li>April</li>
+                <li>May</li>
+                <li>June</li>
+                <li>July</li>
+                <li>August</li>
+                <li>September</li>
+                <li>October</li>
+                <li>November</li>
+                <li>December</li>
+              </ul>
+            </div>
+
+            <div class="tour-details-modal-box">
+              <h4>Advantages</h4>
+              <ul class="list-dot">
+                <li>Signature double-decker train</li>
+                <li>Breakfast on the veranda of the merchant's dacha</li>
+                <li>Gastronomic excursions</li>
+                <li>Master classes</li>
+                <li>Tastings of national dishes</li>
+                <li>Dinners at popular restaurants</li>
+              </ul>
+            </div>
+
+            <a href="tour-page.html" class="btn btn-orange btn-details">Go to tour page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalDetails2" tabindex="-1" aria-labelledby="modalDetails2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-subtitle">Tour to Kaliningrad</div>
+          <h5 class="modal-title">"Amber wind of the Baltic"</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg class="svg-icon">
+              <use xlink:href="assets/images/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="tour-details-modal">
+            <div class="tour-details-modal-box">
+              <h4>Advantages</h4>
+              <ul class="list-dot">
+                <li>Signature double-decker train</li>
+                <li>Breakfast on the veranda of the merchant's dacha</li>
+                <li>Gastronomic excursions</li>
+                <li>Master classes</li>
+                <li>Tastings of national dishes</li>
+                <li>Dinners at popular restaurants</li>
+              </ul>
+            </div>
+
+            <a href="tour-page.html" class="btn btn-orange btn-details">Go to tour page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/jquery/jquery-ui.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/slick/slick.min.js"></script>
+  <script src="assets/vendor/select2/select2.min.js"></script>
+  <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+  <script src="assets/js/common.js"></script>
+</body>
+
+</html>

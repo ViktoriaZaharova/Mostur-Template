@@ -1,0 +1,22 @@
+//description project
+
+The direction of this site is tourism within the country or city.
+
+The project consists of 9 pages:
+index.html - main page
+about.html - company page
+booking.html - tour booking page
+certificates.html - company certificates
+checkout.html - tour payment
+contacts.html - company contacts
+reviews.html - company reviews
+tour-page.html - detailed tour page
+tour-payment.html - tour payment options
+
+
+Other files:
+main.css - site styling along with media queries for responsive display
+common.js - javascript and jquery
+img - image files
+
+Most of the icons are implemented using sprite.svg for ease of coloring. Therefore, they are displayed only on the hosting.

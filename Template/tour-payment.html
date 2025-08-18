@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Mos-Tour</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendor/slick/slick.css" />
+	<link rel="stylesheet" href="assets/css/jquery-ui.css">
+	<link rel="stylesheet" href="assets/vendor/select2/select2.min.css" />
+	<link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.min.css" />
+
+	<link rel="stylesheet" href="assets/css/fonts.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+	<div class="mobile-menu">
+		<div class="btn-close-menu"></div>
+		<a href="index.html" class="logo"><img src="assets/images/logo-min.svg" alt=""></a>
+		<ul class="menu">
+			<li><a href="booking.html">Booking</a></li>
+			<li><a href="reviews.html">Reviews</a></li>
+			<li><a href="tour-page.html">Individual tours</a></li>
+			<li><a href="certificates.html">Gift certificates</a></li>
+			<li><a href="contacts.html">Contacts</a></li>
+		</ul>
+		<a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+	</div>
+
+	<header class="header-page">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-6 col-md-3 col-sm-3 col-xl-2">
+					<a href="index.html" class="logo"><img src="assets/images/logo-min.svg" alt=""></a>
+				</div>
+				<div class="col-6 d-none d-xl-flex">
+					<ul class="menu">
+						<li><a href="booking.html">Booking</a></li>
+						<li><a href="reviews.html">Reviews</a></li>
+						<li><a href="tour-page.html">Individual tours</a></li>
+						<li><a href="certificates.html">Gift certificates</a></li>
+						<li><a href="contacts.html">Contacts</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md-9 col-sm-9 col-xl-4 d-none d-sm-flex align-items-center">
+					<form method="post" class="form-search">
+						<label><input type="text" placeholder="To start searching" required></label>
+						<button type="submit">
+							<svg class="svg-icon">
+								<use xlink:href="assets/images/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+					<a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+				</div>
+
+				<div class="col-6 d-flex d-sm-none">
+					<div class="btn-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="page-section page-certificates page-payment-tour">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+							<li class="breadcrumb-item"><a href="tour-page.html">Tour Page</a></li>
+							<li class="breadcrumb-item"><a href="booking.html">Booking Page</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Tour payment</li>
+						</ol>
+					</nav>
+				</div>
+
+				<div class="col-12">
+					<form method="post" class="form-certificate form-payment-tour">
+						<div class="row">
+							<div class="col-12">
+								<h1>Tour payment</h1>
+
+							</div>
+
+							<div class="col-12">
+								<div class="form-certificate-wrap__box form-certificate-wrap__box-total">
+									<h3>Total</h3>
+									<div class="row">
+										<div class="col-12 col-lg-7">
+
+											<div class="total-position">
+												<div class="total-position__icon"><img src="assets/images/total-icon1.svg" alt=""></div>
+												<p>Gastronomic train to Udmurtia “We're going delicious!»</p>
+											</div>
+											<div class="total-position">
+												<div class="total-position__icon"><img src="assets/images/total-icon2.svg" alt=""></div>
+												<p>April 30, 2021</p>
+											</div>
+											<div class="total-position">
+												<div class="total-position__icon"><img src="assets/images/total-icon3.svg" alt=""></div>
+												<p>3 adults, 4 children</p>
+											</div>
+											<div class="total-position">
+												<div class="total-position__icon"><img src="assets/images/total-icon4.svg" alt=""></div>
+												<p>Park Inn by Radisson, 2 double rooms</p>
+											</div>
+											<a href="#" class="links-red links-edit text-decoration">To change the data</a>
+										</div>
+
+										<div class="col-12 col-lg-5">
+											<div class="total-tour-wrap">
+												<div class="total-sum">81 540 ₽</div>
+												<a href="#" class="links-red links-code text-decoration">Promo code (certificate)</a>
+												<label class="label-code"><input type="text" placeholder="Enter promo code" name="code"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-12">
+								<div class="form-certificate-wrap">
+									<div class="row">
+										<div class="col-12 col-md-10 col-lg-6">
+											<div class="form-certificate-wrap__box">
+												<h3>Contact Information</h3>
+												<label>
+													<input type="text" placeholder="Your name" name="name">
+													<span class="tooltip-icon" data-toggle="tooltip" title="Hint at the top"><svg
+															class="svg-icon">
+															<use xlink:href="assets/images/sprite.svg#info"></use>
+														</svg></span>
+												</label>
+
+												<label>
+													<input type="text" placeholder="Surname" name="first_name">
+												</label>
+
+												<label class="label-phone">
+													<span class="phone-code">
+														<span class="phone-code__country"><img src="assets/images/ru.png" alt=""></span>
+														<span class="phone-code__num">+7</span>
+													</span>
+													<input type="text" placeholder="(999) 999-99-99" name="phone">
+												</label>
+
+												<label>
+													<select name="select" class="select-my js-example-basic-single">
+														<option value="Your region / City of departure">Your region / City of departure</option>
+														<option value="Your region / City of departure">Your region / City of departure</option>
+														<option value="Your region / City of departure">Your region / City of departure</option>
+													</select>
+												</label>
+
+												<label>
+													<input type="text" placeholder="E-mail" name="mail">
+													<span class="tooltip-icon" data-toggle="tooltip" title="Hint at the top"><svg
+															class="svg-icon">
+															<use xlink:href="assets/images/sprite.svg#info"></use>
+														</svg></span>
+												</label>
+
+
+												<label>
+													<select name="select" class="select-my js-example-basic-single">
+														<option value="How did you know about us?">How did you know about us?</option>
+														<option value="How did you know about us?">How did you know about us?</option>
+														<option value="How did you know about us?">How did you know about us?</option>
+													</select>
+												</label>
+
+												<label><textarea name="comment" placeholder="A comment"></textarea></label>
+
+												<label class="checkbox">
+													<input type="checkbox" name="checkbox" class="checkbox-inp" checked>
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">I give my consent to receive information about discounts and new
+														excursions</span>
+												</label>
+
+												<label class="checkbox">
+													<input type="checkbox" name="checkbox" class="checkbox-inp" checked>
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">I accept the <a href="#"
+															class="d-inline text-decoration links-red">refund policy</a></span>
+												</label>
+
+												<label class="checkbox">
+													<input type="checkbox" name="checkbox" class="checkbox-inp" checked>
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">I accept <a href="#"
+															class="d-inline text-decoration links-red">Terms and Conditions</a></span>
+												</label>
+											</div>
+										</div>
+										<div class="col-12 col-md-10 col-lg-5 offset-lg-1">
+											<div class="form-certificate-wrap__box payment-variable-box">
+												<h3>Payment Options</h3>
+
+												<div class="box-text">
+													<p>This tour (excursion) participates in the state program <a href="#"
+															class="d-inline text-decoration links-red links-doc">subsidies
+															(cashback) from Rostourism</a></p>
+												</div>
+
+												<label class="rassage-decoration__list-item label-checkbox">
+													<input type="radio" class="input-check" name="radio" checked>
+													<span class="pay-icon"><img src="assets/images/visa.png" alt=""></span>
+													<span class="label-checkbox__text">
+														<span class="rassage-decoration__list-item-title">Bank card "MIR"</span>
+														<span>To participate in the program, payment must be made only online and with a bank card
+															of the MIR payment system</span>
+													</span>
+												</label>
+
+												<label class="rassage-decoration__list-item label-checkbox">
+													<span class="pay-icon"><img src="assets/images/sber.png" alt=""></span>
+													<input type="radio" class="input-check" name="radio">
+													<span class="label-checkbox__text">
+														<span class="rassage-decoration__list-item-title">Sberbank Online</span>
+														<span>Payment through a personal account for Sberbank clients</span>
+													</span>
+												</label>
+
+												<label class="rassage-decoration__list-item label-checkbox">
+													<span class="pay-icon"><img src="assets/images/pay.svg" alt=""></span>
+													<input type="radio" class="input-check" name="radio">
+													<span class="label-checkbox__text">
+														<span class="rassage-decoration__list-item-title">For 4 months</span>
+														<span>According to your details, we will issue an invoice for payment</span>
+													</span>
+												</label>
+
+
+											</div>
+										</div>
+
+										<div class="col-12">
+											<button type="submit" class="btn btn-orange">Checkout</button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-4 order-lg-1">
+						<div class="footer-box">
+							<span>Multichannel</span>
+							<a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+							<a href="tel:+70000071313" class="phone">8 (800) 007-13-13</a>
+							<a href="mailto:zakaz-test@gmail.com" class="mail">zakaz-test@gmail.com</a>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-5 col-lg-3 offset-md-2 offset-lg-1 d-none d-md-flex">
+						<ul class="footer-menu">
+							<li><a href="about.html">About company</a></li>
+							<li><a href="document.html">Juristic documents</a></li>
+							<li><a href="reviews.html">Reviews</a></li>
+						</ul>
+					</div>
+
+					<div class="col-12 col-md-5 col-lg-4">
+						<ul class="footer-menu">
+							<li><a href="tour-payment.html">Payment Methods</a></li>
+							<li><a href="contacts.html">Contacts</a></li>
+							<li><a href="certificates.html">Gift certificates</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-xl-4 order-xl-1">
+						<ul class="list-social">
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#phone"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#whatsapp"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#telegram"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#vk"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#fb"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#instagram"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#twitter"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#youtube"></use>
+									</svg>
+								</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-xl-8">
+						<ul class="menu-document list-dots">
+							<li>
+								<div class="copyright">© 2006–2023 Mos-Tour Company</div>
+							</li>
+							<li><a href="#">Confidentiality</a></li>
+							<li><a href="#">Conditions</a></li>
+							<li><a href="#">Company details</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="modalDetails1" tabindex="-1" aria-labelledby="modalDetails1Label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-subtitle">Tour to Kaliningrad</div>
+					<h5 class="modal-title">"Amber wind of the Baltic"</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="assets/images/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="tour-details-modal">
+						<div class="tour-details-modal-box">
+							<h4>Duration</h4>
+							<ul class="list-time-tours list-dots">
+								<li>1 day</li>
+								<li>2 days / 1 night</li>
+								<li>3 days / 2 nights</li>
+								<li>4 days / 3 nights</li>
+								<li>5 days / 4 nights</li>
+								<li>6 days / 5 nights</li>
+								<li>7 days / 6 nights</li>
+								<li>8 days / 7 nights</li>
+							</ul>
+						</div>
+
+						<div class="tour-details-modal-box">
+							<h4>Season</h4>
+							<ul class="list-season-tours">
+								<li>January</li>
+								<li>February</li>
+								<li>March</li>
+								<li>April</li>
+								<li>May</li>
+								<li>June</li>
+								<li>July</li>
+								<li>August</li>
+								<li>September</li>
+								<li>October</li>
+								<li>November</li>
+								<li>December</li>
+							</ul>
+						</div>
+
+						<div class="tour-details-modal-box">
+							<h4>Advantages</h4>
+							<ul class="list-dot">
+								<li>Signature double-decker train</li>
+								<li>Breakfast on the veranda of the merchant's dacha</li>
+								<li>Gastronomic excursions</li>
+								<li>Master classes</li>
+								<li>Tastings of national dishes</li>
+								<li>Dinners at popular restaurants</li>
+							</ul>
+						</div>
+
+						<a href="tour-page.html" class="btn btn-orange btn-details">Go to tour page</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalDetails2" tabindex="-1" aria-labelledby="modalDetails2Label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-subtitle">Tour to Kaliningrad</div>
+					<h5 class="modal-title">"Amber wind of the Baltic"</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="assets/images/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="tour-details-modal">
+						<div class="tour-details-modal-box">
+							<h4>Advantages</h4>
+							<ul class="list-dot">
+								<li>Signature double-decker train</li>
+								<li>Breakfast on the veranda of the merchant's dacha</li>
+								<li>Gastronomic excursions</li>
+								<li>Master classes</li>
+								<li>Tastings of national dishes</li>
+								<li>Dinners at popular restaurants</li>
+							</ul>
+						</div>
+
+						<a href="tour-page.html" class="btn btn-orange btn-details">Go to tour page</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/jquery/jquery-ui.js"></script>
+	<script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/slick/slick.min.js"></script>
+	<script src="assets/vendor/select2/select2.min.js"></script>
+	<script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+	<script src="assets/js/common.js"></script>
+</body>
+
+</html>

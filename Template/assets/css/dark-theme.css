@@ -1,0 +1,100 @@
+/* Dark Theme Styles (scoped by body.dark-theme) */
+body.dark-theme {
+  background-color: #121212;
+  color: #e6e6e6;
+}
+
+/* Links */
+body.dark-theme a {
+  color: #e6e6e6;
+  fill: #fff;
+  stroke: none
+}
+
+body.dark-theme a:hover {
+  color: #ffd54f;
+}
+
+body.dark-theme .header-page .phone {
+  color: #fff;
+}
+
+/* Navbar/Header/Footer */
+body.dark-theme header,
+body.dark-theme .navbar,
+body.dark-theme footer {
+  background-color: #1a1a1a;
+  color: #d0d0d0;
+  border-color: #2a2a2a;
+}
+
+/* Cards/sections/panels */
+body.dark-theme .card,
+body.dark-theme .section,
+body.dark-theme .content-box,
+body.dark-theme .panel,
+body.dark-theme .form-control,
+body.dark-theme .dropdown-menu,
+body.dark-theme .modal-content {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+  border-color: #2a2a2a;
+}
+
+/* Inputs */
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme select {
+  background-color: #141414;
+  color: #e6e6e6;
+  border-color: #2a2a2a;
+}
+
+body.dark-theme input::placeholder,
+body.dark-theme textarea::placeholder {
+  color: #bdbdbd;
+}
+
+/* Buttons */
+body.dark-theme .btn {
+  background-color: #303030;
+  color: #ffffff;
+  border-color: #3a3a3a;
+}
+
+body.dark-theme .btn:hover,
+body.dark-theme .btn:focus {
+  background-color: #3a3a3a;
+  border-color: #4a4a4a;
+}
+
+/* Tables */
+body.dark-theme table {
+  color: #e6e6e6;
+}
+
+body.dark-theme thead,
+body.dark-theme th {
+  background-color: #1e1e1e;
+}
+
+/* Utilities */
+body.dark-theme .border {
+  border-color: #2a2a2a !important;
+}
+
+body.dark-theme .text-muted {
+  color: #bdbdbd !important;
+}
+
+body.dark-theme .sidebar-about {
+  background: #222;
+}
+
+body.dark-theme .breadcrumb-item.active {
+  color: #fff
+}
+
+body.dark-theme .breadcrumb-item + .breadcrumb-item::before {
+  filter: invert(1);
+}

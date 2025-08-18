@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mos-Tour</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
+
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/slick/slick.css" />
+  <link rel="stylesheet" href="assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="assets/vendor/select2/select2.min.css" />
+  <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.min.css" />
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+
+
+  <div class="mobile-menu">
+    <div class="btn-close-menu"></div>
+    <a href="index.html" class="logo"><img src="assets/images/logo-min.svg" alt=""></a>
+    <ul class="menu">
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="tour-page.html">Individual tours</a></li>
+      <li><a href="certificates.html">Gift certificates</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+    <a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6">
+          
+          <a href="index.html" class="logo"><img src="assets/images/logo-min.svg" alt=""></a>
+        </div>
+        <div class="col-6 d-none d-sm-flex align-items-center">
+          <a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+
+        </div>
+
+        <div class="col-6 d-flex d-sm-none align-items-center">
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="subtitle">Tours</div>
+          <h1>Kaliningrad region</h1>
+        </div>
+
+        <div class="col-12 offset-lg-2 col-lg-8 col-md-10 offset-md-1">
+          <form method="post" class="filter-tour">
+
+            <div class="filter-tour-wrapper">
+
+              <div class="dropdown filter-tour-box-wrap">
+                <div class="filter-tour-box filter-tour-box__time">
+                  <h4>Duration</h4>
+                  <label class="select-city-label select-city-label__mobile">
+                    <select name="select" class="select-my select-city">
+                      <option value="Duration" class="select-city__title">Duration</option>
+                      <option value="Moscow">Moscow</option>
+                      <option value="Saint Petersburg">Saint Petersburg</option>
+                      <option value="Altai">Altai</option>
+                    </select>
+                  </label>
+                  <label class="select-city-label">
+                    <select name="select" class="select-my select-city">
+                      <option value="How many days?" class="select-city__title">How many days?</option>
+                      <option value="Moscow">Moscow</option>
+                      <option value="Saint Petersburg">Saint Petersburg</option>
+                      <option value="Altai">Altai</option>
+                    </select>
+                  </label>
+                  <div class="filter-tour-box__icon"><svg class="svg-icon">
+                      <use xlink:href="assets/images/sprite.svg#location"></use>
+                    </svg></div>
+                </div>
+              </div>
+              <div class="dropdown filter-tour-box-wrap">
+                <div class="filter-tour-box dropdown-toggle" data-toggle="dropdown">
+                  <h4>Subject</h4>
+                  <span>What tour?</span>
+                  <div class="filter-tour-box__icon"><svg class="svg-icon">
+                      <use xlink:href="assets/images/sprite.svg#arrow-bottom"></use>
+                    </svg></div>
+                </div>
+                <div class="dropdown-menu">
+                  <ul class="list-checkbox">
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox-inp" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">1 day</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox-inp" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">2 days / 1 night</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox-inp" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">3 days / 2 nights</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox-inp" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">5 days / 4 nights</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox-inp" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">6 days / 5 nights</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" class="checkbox-inp" name="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">7 days / 6 nights</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="btn-group">
+                    <a href="#" class="links-clear">Clear</a>
+                    <a href="#" class="btn btn-grey">Save</a>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown filter-tour-box-wrap">
+                <div class="filter-tour-box dropdown-toggle" data-toggle="dropdown">
+                  <h4>Start date</h4>
+                  <span>When?</span>
+                  <div class="filter-tour-box__icon"><svg class="svg-icon">
+                      <use xlink:href="assets/images/sprite.svg#arrow-bottom"></use>
+                    </svg></div>
+                </div>
+                <div class="dropdown-menu dropdown-menu-calendar">
+                  <div class="dropdown-menu__body">
+                    <div class="datepicker-top">
+                      <div class="datepicker"></div>
+                    </div>
+                    <div class="datepicker-bottom">
+                      <div class="logo-company"><img src="assets/images/logo-min.svg" alt=""></div>
+                      <div class="text">
+                        <p>The calendar shows what is selected in the duration. </p>
+                        <p>You can choose a date at the stage of purchase.</p>
+                        <p>Our manager... Individual selection with any date</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown filter-tour-box-wrap">
+                <div class="filter-tour-box dropdown-toggle" data-toggle="dropdown">
+                  <h4>Number of guests</h4>
+                  <span>Who is riding?</span>
+                  <div class="filter-tour-box__icon"><svg class="svg-icon">
+                      <use xlink:href="assets/images/sprite.svg#user"></use>
+                    </svg></div>
+                </div>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu__body">
+                    <div class="number-of-guests">
+                      <div class="number-of-guests__text">
+                        <h4>Adults</h4><span>Age from 17</span>
+                      </div>
+                      <div class="amount">
+                        <span class="down"><svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#minus"></use>
+                          </svg></span>
+                        <input type="text" value="1" />
+                        <span class="up"><svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#plus"></use>
+                          </svg></span>
+                      </div>
+                    </div>
+                    <div class="number-of-guests">
+                      <div class="number-of-guests__text">
+                        <h4>Children</h4><span>Age: 5-17</span>
+                      </div>
+                      <div class="amount">
+                        <span class="down"><svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#minus"></use>
+                          </svg></span>
+                        <input type="text" value="1" />
+                        <span class="up"><svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#plus"></use>
+                          </svg></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-search">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#search"></use>
+                </svg>
+                <span class="btn-search__text">Find tours</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="col-12">
+          <div class="main-bottom">
+            <div class="safety">
+              <div class="safety-icon"><img src="assets/images/safety.svg" alt=""></div>
+              <p>Secure payment</p>
+            </div>
+
+            <div class="cash">
+              <p>Cashback by card</p>
+              <div class="cash-icon"><img src="assets/images/mir.png" alt=""></div>
+            </div>
+            <div class="location">
+              <div class="location-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#map"></use>
+                </svg>
+              </div>
+              <p>Moscow, Svoboda street 13 / 1 office 2</p>
+            </div>
+            <div class="travels">
+              <img src="assets/images/safe.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <section class="tours-rus">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-32">
+          <h2>Tours in Russia</h2>
+        </div>
+        <div class="col-12 col-md-6 d-none d-md-flex justify-content-end mb-32">
+          <a href="#" class="links-red text-decoration">All directions</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-3 mb-16 tours-rus-col">
+          <div class="tours-card">
+            <ul class="tours-card-labels">
+              <li class="bg-white border-red">SUPERHIT</li>
+              <li class="bg-gradient">CASHBACK 10%</li>
+            </ul>
+            <div class="tours-card-slider w100">
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card.png" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card2.png" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card3.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card4.jpeg" alt=""></a>
+              </div>
+            </div>
+
+            <div class="tours-card__body">
+              <div class="tour-rating">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
+                </svg>
+                <div class="tour-rating__val">4.5 (84)</div>
+              </div>
+
+              <a href="tour-page.html" class="tours-card__location">Kaliningrad region</a>
+              <a href="tour-page.html" class="tours-card__title">"Royal Journey... + Nesselbeck Castle"</a>
+              <div class="price">from 700 $</div>
+
+
+              <a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+                data-target="#modalDetails1">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-16 tours-rus-col">
+          <div class="tours-card">
+            <ul class="tours-card-labels">
+              <li class="bg-white border-red">SUPERHIT</li>
+              <li class="bg-gradient">CASHBACK 10%</li>
+            </ul>
+            <div class="tours-card-slider w100">
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card2.png" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card3.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card5.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card6.jpeg" alt=""></a>
+              </div>
+            </div>
+
+            <div class="tours-card__body">
+              <div class="tour-rating">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
+                </svg>
+                <div class="tour-rating__val">4.5 (84)</div>
+              </div>
+
+              <a href="tour-page.html" class="tours-card__location">Kaliningrad region</a>
+              <a href="tour-page.html" class="tours-card__title">"Royal Journey... + Nesselbeck Castle"</a>
+              <div class="price">from 700 $</div>
+
+
+              <a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+                data-target="#modalDetails1">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-16 tours-rus-col">
+          <div class="tours-card">
+            <ul class="tours-card-labels">
+              <li class="bg-white border-red">SUPERHIT</li>
+              <li class="bg-gradient">CASHBACK 10%</li>
+            </ul>
+            <div class="tours-card-slider w100">
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card7.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card8.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card9.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card10.jpeg" alt=""></a>
+              </div>
+            </div>
+
+            <div class="tours-card__body">
+              <div class="tour-rating">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
+                </svg>
+                <div class="tour-rating__val">4.5 (84)</div>
+              </div>
+
+              <a href="tour-page.html" class="tours-card__location">Kaliningrad region</a>
+              <a href="tour-page.html" class="tours-card__title">"Royal Journey... + Nesselbeck Castle"</a>
+              <div class="price">from 700 $</div>
+
+
+              <a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+                data-target="#modalDetails1">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-16 tours-rus-col">
+          <div class="tours-card">
+            <ul class="tours-card-labels">
+              <li class="bg-white border-red">SUPERHIT</li>
+              <li class="bg-gradient">CASHBACK 10%</li>
+            </ul>
+            <div class="tours-card-slider w100">
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card11.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card12.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card2.png" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card3.jpeg" alt=""></a>
+              </div>
+            </div>
+
+            <div class="tours-card__body">
+              <div class="tour-rating">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
+                </svg>
+                <div class="tour-rating__val">4.5 (84)</div>
+              </div>
+
+              <a href="tour-page.html" class="tours-card__location">Kaliningrad region</a>
+              <a href="tour-page.html" class="tours-card__title">"Royal Journey... + Nesselbeck Castle"</a>
+              <div class="price">from 700 $</div>
+
+
+              <a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+                data-target="#modalDetails1">More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="tours-rus-wrap">
+            <div class="tours-rus-wrap__body">
+              <h3>How to travel with Mos-Tour in Russia?</h3>
+              <div class="box-text">
+                <p>We are a large company, which means we can offer the customer a wide range of tourist
+                  services</p>
+              </div>
+              <a href="#" class="btn btn-orange">Begin</a>
+            </div>
+            <img src="assets/images/bg3.png" alt="" class="tours-rus-wrap__bg">
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3 mb-16 tours-rus-col">
+          <div class="tours-card">
+            <ul class="tours-card-labels">
+              <li class="bg-white border-red">SUPERHIT</li>
+              <li class="bg-gradient">CASHBACK 10%</li>
+            </ul>
+            <div class="tours-card-slider w100">
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card6.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card3.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card7.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card8.jpeg" alt=""></a>
+              </div>
+            </div>
+
+            <div class="tours-card__body">
+              <div class="tour-rating">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
+                </svg>
+                <div class="tour-rating__val">4.5 (84)</div>
+              </div>
+
+              <a href="tour-page.html" class="tours-card__location">Kaliningrad region</a>
+              <a href="tour-page.html" class="tours-card__title">"Royal Journey... + Nesselbeck Castle"</a>
+              <div class="price">from 700 $</div>
+
+
+              <a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+                data-target="#modalDetails1">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-16 tours-rus-col">
+          <div class="tours-card">
+            <ul class="tours-card-labels">
+              <li class="bg-white border-red">SUPERHIT</li>
+              <li class="bg-gradient">CASHBACK 10%</li>
+            </ul>
+            <div class="tours-card-slider w100">
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card11.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card12.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card8.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card9.jpeg" alt=""></a>
+              </div>
+            </div>
+
+            <div class="tours-card__body">
+              <div class="tour-rating">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
+                </svg>
+                <div class="tour-rating__val">4.5 (84)</div>
+              </div>
+
+              <a href="tour-page.html" class="tours-card__location">Kaliningrad region</a>
+              <a href="tour-page.html" class="tours-card__title">"Royal Journey... + Nesselbeck Castle"</a>
+              <div class="price">from 700 $</div>
+
+
+              <a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+                data-target="#modalDetails1">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-16 tours-rus-col">
+          <div class="tours-card">
+            <ul class="tours-card-labels">
+              <li class="bg-white border-red">SUPERHIT</li>
+              <li class="bg-gradient">CASHBACK 10%</li>
+            </ul>
+            <div class="tours-card-slider w100">
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card10.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card4.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card3.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card.png" alt=""></a>
+              </div>
+            </div>
+
+            <div class="tours-card__body">
+              <div class="tour-rating">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
+                </svg>
+                <div class="tour-rating__val">4.5 (84)</div>
+              </div>
+
+              <a href="tour-page.html" class="tours-card__location">Kaliningrad region</a>
+              <a href="tour-page.html" class="tours-card__title">"Royal Journey... + Nesselbeck Castle"</a>
+              <div class="price">from 700 $</div>
+
+
+              <a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+                data-target="#modalDetails1">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-16 tours-rus-col">
+          <div class="tours-card">
+            <ul class="tours-card-labels">
+              <li class="bg-white border-red">SUPERHIT</li>
+              <li class="bg-gradient">CASHBACK 10%</li>
+            </ul>
+            <div class="tours-card-slider w100">
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card4.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card12.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card11.jpeg" alt=""></a>
+              </div>
+              <div class="slide">
+                <a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card8.jpeg" alt=""></a>
+              </div>
+            </div>
+
+            <div class="tours-card__body">
+              <div class="tour-rating">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#star"></use>
+                </svg>
+                <div class="tour-rating__val">4.5 (84)</div>
+              </div>
+
+              <a href="tour-page.html" class="tours-card__location">Kaliningrad region</a>
+              <a href="tour-page.html" class="tours-card__title">"Royal Journey... + Nesselbeck Castle"</a>
+              <div class="price">from 700 $</div>
+
+
+              <a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+                data-target="#modalDetails1">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex d-md-none">
+          <a href="#" class="btn btn-border">More offers</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-tour pos-r">
+    <div class="about-tour-slider w100">
+      <div class="slide">
+        <div class="about-tour-slider-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 col-lg-7 col-xl-7">
+                <h3>Ruskeala</h3>
+                <div class="box-text">
+                  <p>Mountain Park "Ruskeala" before our eyes turns into an exclusive creative and scientific laboratory
+                    modern tourism!</p>
+                </div>
+                <a href="#" class="btn btn-orange">To learn more</a>
+              </div>
+            </div>
+          </div>
+          <img src="assets/images/about-tour1.png" alt="" class="about-tour-slider__bg">
+        </div>
+      </div>
+      <div class="slide">
+        <div class="about-tour-slider-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 col-lg-7 col-xl-7">
+                <h3>Curonian spit</h3>
+                <div class="box-text">
+                  <p>Non-tourist routes. Places you don't know about from open sources. Looking for and choosing the
+                    best
+                    guides who can captivate their city. </p>
+                </div>
+                <a href="#" class="btn btn-orange">To learn more</a>
+              </div>
+            </div>
+          </div>
+          <img src="assets/images/about-tour2.jpeg" alt="" class="about-tour-slider__bg">
+        </div>
+      </div>
+      <div class="slide">
+        <div class="about-tour-slider-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 col-lg-7 col-xl-7">
+                <h3>Ruskeala</h3>
+                <div class="box-text">
+                  <p>Mountain Park "Ruskeala" before our eyes turns into an exclusive creative and scientific laboratory
+                    modern tourism!</p>
+                </div>
+                <a href="#" class="btn btn-orange">To learn more</a>
+              </div>
+            </div>
+          </div>
+          <img src="assets/images/about-tour1.png" alt="" class="about-tour-slider__bg">
+        </div>
+      </div>
+      <div class="slide">
+        <div class="about-tour-slider-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 col-lg-7 col-xl-7">
+                <h3>Curonian spit</h3>
+                <div class="box-text">
+                  <p>Non-tourist routes. Places you don't know about from open sources. Looking for and choosing the
+                    best
+                    guides who can captivate their city. </p>
+                </div>
+                <a href="#" class="btn btn-orange">To learn more</a>
+              </div>
+            </div>
+          </div>
+          <img src="assets/images/about-tour2.jpeg" alt="" class="about-tour-slider__bg">
+        </div>
+      </div>
+    </div>
+
+    <div class="about-tour-slider__nav slider-nav"></div>
+
+  </section>
+
+
+  <section class="tours-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <h2>Tour topics</h2>
+        </div>
+        <div class="col-12 col-md-6 d-none d-sm-flex justify-content-end">
+          <a href="#" class="links-red text-decoration">All topics</a>
+        </div>
+      </div>
+
+      <div class="row tours-section-slider">
+        <div class="col-12 col-md-6 col-lg-4 tours-section-item__col">
+          <a href="#" class="tours-section-item">
+            <span class="tours-section-img__img"><img src="assets/images/tour1.png" alt=""></span>
+            <span class="tours-section-item__title">Active</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 tours-section-item__col">
+          <a href="#" class="tours-section-item">
+            <span class="tours-section-img__img"><img src="assets/images/tour2.png" alt=""></span>
+            <span class="tours-section-item__title">Family</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 tours-section-item__col">
+          <a href="#" class="tours-section-item">
+            <span class="tours-section-img__img"><img src="assets/images/tour3.png" alt=""></span>
+            <span class="tours-section-item__title">On weekend</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 tours-section-item__col">
+          <a href="#" class="tours-section-item">
+            <span class="tours-section-img__img"><img src="assets/images/tour4.jpeg" alt=""></span>
+            <span class="tours-section-item__title">Active</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 tours-section-item__col">
+          <a href="#" class="tours-section-item">
+            <span class="tours-section-img__img"><img src="assets/images/tour5.jpeg" alt=""></span>
+            <span class="tours-section-item__title">Family</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 tours-section-item__col">
+          <a href="#" class="tours-section-item">
+            <span class="tours-section-img__img"><img src="assets/images/tour6.jpeg" alt=""></span>
+            <span class="tours-section-item__title">On weekend</span>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 d-flex d-sm-none">
+          <a href="#" class="btn btn-border">All tour topics</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4 order-lg-1">
+            <div class="footer-box">
+              <span>Multichannel</span>
+              <a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+              <a href="tel:+70000071313" class="phone">8 (800) 007-13-13</a>
+              <a href="mailto:zakaz-test@gmail.com" class="mail">zakaz-test@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-5 col-lg-3 offset-md-2 offset-lg-1 d-none d-md-flex">
+            <ul class="footer-menu">
+              <li><a href="about.html">About company</a></li>
+              <li><a href="document.html">Juristic documents</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-5 col-lg-4">
+            <ul class="footer-menu">
+              <li><a href="tour-payment.html">Payment Methods</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="certificates.html">Gift certificates</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-xl-4 order-xl-1">
+            <ul class="list-social">
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#phone"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#telegram"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#vk"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#fb"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#instagram"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#twitter"></use>
+                  </svg>
+                </a></li>
+              <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="assets/images/sprite.svg#youtube"></use>
+                  </svg>
+                </a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-xl-8">
+            <ul class="menu-document list-dots">
+              <li>
+                <div class="copyright">© 2006–2023 Mos-Tour Company</div>
+              </li>
+              <li><a href="#">Confidentiality</a></li>
+              <li><a href="#">Conditions</a></li>
+              <li><a href="#">Company details</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal fade" id="modalDetails1" tabindex="-1" aria-labelledby="modalDetails1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-subtitle">Tour to Kaliningrad</div>
+          <h5 class="modal-title">"Amber wind of the Baltic"</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg class="svg-icon">
+              <use xlink:href="assets/images/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="tour-details-modal">
+            <div class="tour-details-modal-box">
+              <h4>Duration</h4>
+              <ul class="list-time-tours list-dots">
+                <li>1 day</li>
+                <li>2 days / 1 night</li>
+                <li>3 days / 2 nights</li>
+                <li>4 days / 3 nights</li>
+                <li>5 days / 4 nights</li>
+                <li>6 days / 5 nights</li>
+                <li>7 days / 6 nights</li>
+                <li>8 days / 7 nights</li>
+              </ul>
+            </div>
+
+            <div class="tour-details-modal-box">
+              <h4>Season</h4>
+              <ul class="list-season-tours">
+                <li>January</li>
+                <li>February</li>
+                <li>March</li>
+                <li>April</li>
+                <li>May</li>
+                <li>June</li>
+                <li>July</li>
+                <li>August</li>
+                <li>September</li>
+                <li>October</li>
+                <li>November</li>
+                <li>December</li>
+              </ul>
+            </div>
+
+            <div class="tour-details-modal-box">
+              <h4>Advantages</h4>
+              <ul class="list-dot">
+                <li>Signature double-decker train</li>
+                <li>Breakfast on the veranda of the merchant's dacha</li>
+                <li>Gastronomic excursions</li>
+                <li>Master classes</li>
+                <li>Tastings of national dishes</li>
+                <li>Dinners at popular restaurants</li>
+              </ul>
+            </div>
+
+            <a href="tour-page.html" class="btn btn-orange btn-details">Go to tour page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalDetails2" tabindex="-1" aria-labelledby="modalDetails2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-subtitle">Tour to Kaliningrad</div>
+          <h5 class="modal-title">"Amber wind of the Baltic"</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg class="svg-icon">
+              <use xlink:href="assets/images/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="tour-details-modal">
+            <div class="tour-details-modal-box">
+              <h4>Advantages</h4>
+              <ul class="list-dot">
+                <li>Signature double-decker train</li>
+                <li>Breakfast on the veranda of the merchant's dacha</li>
+                <li>Gastronomic excursions</li>
+                <li>Master classes</li>
+                <li>Tastings of national dishes</li>
+                <li>Dinners at popular restaurants</li>
+              </ul>
+            </div>
+
+            <a href="tour-page.html" class="btn btn-orange btn-details">Go to tour page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/jquery/jquery-ui.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/slick/slick.min.js"></script>
+  <script src="assets/vendor/select2/select2.min.js"></script>
+  <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  
+  <script src="assets/js/common.js"></script>
+
+
+</body>
+
+</html>

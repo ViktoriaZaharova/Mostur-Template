@@ -1,0 +1,5 @@
+
+body.dark-theme{background:#111;color:#eee}body.dark-theme a{color:#9cf;fill: #fff; stroke: none}body.dark-theme .header-page .phone {
+  color: #fff;}body.dark-theme header,body.dark-theme footer{background:#222}body.dark-theme .card{background:#1a1a1a;color:#eee}body.dark-theme .sidebar-about {background: #222;}body.dark-theme .breadcrumb-item.active {color: #fff}body.dark-theme .breadcrumb-item + .breadcrumb-item::before {
+  filter: invert(1);
+}

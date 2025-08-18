@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Mos-Tour</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendor/slick/slick.css" />
+	<link rel="stylesheet" href="assets/css/jquery-ui.css">
+	<link rel="stylesheet" href="assets/vendor/select2/select2.min.css" />
+	<link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.min.css" />
+
+	<link rel="stylesheet" href="assets/css/fonts.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close-menu"></div>
+  <a href="index.html" class="logo"><img src="assets/images/logo-min.svg" alt=""></a>
+  <ul class="menu">
+    <li><a href="booking.html">Booking</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="tour-page.html">Individual tours</a></li>
+    <li><a href="certificates.html">Gift certificates</a></li>
+    <li><a href="contacts.html">Contacts</a></li>
+  </ul>
+  <a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+</div>
+
+<header class="header-page">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-6 col-md-3 col-sm-3 col-xl-2">
+        <a href="index.html" class="logo"><img src="assets/images/logo-min.svg" alt=""></a>
+      </div>
+      <div class="col-6 d-none d-xl-flex">
+        <ul class="menu">
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="tour-page.html">Individual tours</a></li>
+          <li><a href="certificates.html">Gift certificates</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-9 col-sm-9 col-xl-4 d-none d-sm-flex align-items-center">
+        <form method="post" class="form-search">
+          <label><input type="text" placeholder="To start searching" required></label>
+          <button type="submit">
+            <svg class="svg-icon">
+              <use xlink:href="assets/images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+      </div>
+
+      <div class="col-6 d-flex d-sm-none">
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-section page-certificates page-payment-tour page-tour">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-none d-sm-flex">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tour Page</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="col-12 d-flex flex-wrap">
+        <div class="subtitle">Tour to Kaliningrad</div>
+        <h1>"Amber Weekend on the Baltic Sea"</h1>
+
+        <div class="mini-info">
+          <div class="all-rating mini-info-box">
+            <svg class="svg-icon">
+              <use xlink:href="assets/images/sprite.svg#star"></use>
+            </svg>
+            <div class="all-rating__val">4.3 (52 reviews)</div>
+          </div>
+
+          <div class="mini-info-box">
+            <svg class="svg-icon">
+              <use xlink:href="assets/images/sprite.svg#rating"></use>
+            </svg>
+            <p>SUPERHIT</p>
+          </div>
+          <div class="mini-info-box">
+            <svg class="svg-icon svg-icon-map">
+              <use xlink:href="assets/images/sprite.svg#map"></use>
+            </svg>
+            <p>Kaliningrad</p>
+          </div>
+        </div>
+
+        <div class="gallery-tour">
+
+          <a href="#" class="gallery-tour-col" data-toggle="modal" data-target="#modalTourGallery">
+            <img src="assets/images/photo1.png" alt="">
+            <span class="gallery-tour-col__btn">Show all photos</span>
+          </a>
+
+          <a href="#" class="gallery-tour-col" data-toggle="modal" data-target="#modalTourGallery">
+            <img src="assets/images/photo2.png" alt="">
+            <span class="gallery-tour-col__btn">Show all photos</span>
+          </a>
+
+          <a href="#" class="gallery-tour-col" data-toggle="modal" data-target="#modalTourGallery">
+            <img src="assets/images/photo3.png" alt="">
+            <span class="gallery-tour-col__btn">Show all photos</span>
+          </a>
+
+          <a href="#" class="gallery-tour-col" data-toggle="modal" data-target="#modalTourGallery">
+            <img src="assets/images/photo4.png" alt="">
+            <span class="gallery-tour-col__btn">Show all photos</span>
+          </a>
+
+          <a href="#" class="gallery-tour-col" data-toggle="modal" data-target="#modalTourGallery">
+            <img src="assets/images/photo5.png" alt="">
+            <span class="gallery-tour-col__btn">Show all photos</span>
+          </a>
+
+          <a href="#" class="gallery-tour-col" data-toggle="modal" data-target="#modalTourGallery">
+            <img src="assets/images/photo6.png" alt="">
+            <span class="gallery-tour-col__btn">Show all photos</span>
+          </a>
+        </div>
+
+        <div class="gallery-tour__bottom">
+          <ul class="list-dots">
+						<li>For the weekend, Family</li>
+						<li>2 days / 1 night</li>
+						<li>Friday - Monday</li>
+          </ul>
+
+          <div class="d-flex d-sm-none gallery-tour__bottom-wrap">
+            <div class="price">from 9 390 ₽</div>
+            <div class="btn-group">
+              <a href="booking.html" class="btn btn-orange">Booking</a>
+              <a href="#" class="btn btn-border">Tour dates</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="tour-details-info main-my">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-lg-8 col-sm-7">
+            <div class="tour-details-info__box">
+              <h2>Tour Benefits</h2>
+              <ul class="list-advantages-tour">
+                <li>
+                  <div class="advantages-tour__icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="assets/images/sprite.svg#marker-icon"></use>
+                    </svg>
+                  </div>
+									<p>Signature double-decker train</p>
+                </li>
+                <li>
+                  <div class="advantages-tour__icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="assets/images/sprite.svg#marker-icon"></use>
+                    </svg>
+                  </div>
+									<p>Breakfast on the veranda of a merchant's dacha</p>
+                </li>
+                <li>
+                  <div class="advantages-tour__icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="assets/images/sprite.svg#marker-icon"></use>
+                    </svg>
+                  </div>
+									<p>Gastronomic excursions</p>
+                </li>
+                <li>
+                  <div class="advantages-tour__icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="assets/images/sprite.svg#marker-icon"></use>
+                    </svg>
+                  </div>
+									<p>Master classes</p>
+                </li>
+                <li>
+                  <div class="advantages-tour__icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="assets/images/sprite.svg#marker-icon"></use>
+                    </svg>
+                  </div>
+									<p>Tastings of national dishes</p>
+                </li>
+                <li>
+                  <div class="advantages-tour__icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="assets/images/sprite.svg#marker-icon"></use>
+                    </svg>
+                  </div>
+                  <p>Dinners at popular restaurants</p>
+                </li>
+                <li>
+                  <div class="advantages-tour__icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="assets/images/sprite.svg#marker-icon"></use>
+                    </svg>
+                  </div>
+                  <p>Accommodation Park Inn Radisson </p>
+                  <ul class="list-rating">
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="assets/images/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="assets/images/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="assets/images/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="assets/images/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tour-details-info__box">
+              <h2>What awaits you</h2>
+              <div class="description-tour-text">
+								<p>Do you know that it is the Finno-Ugric peoples living in the Cis-Urals (Udmurts, Komi-Permyaks),
+									can historically claim to be the inventors of everyone's favorite dumplings? And proof of this
+									the word "Pelnyan" is used, which means "bread ear".</p>
+								<p>We invite you to go on a bright and memorable gastronomic journey to
+									Udmurtia!</p>
+                <p>On this exciting trip to Izhevsk, you will taste the best dishes of the national cuisine of Udmurtia,
+								become
+								chef at a culinary master class, visit...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eligendi est facilis quos velit veniam!
+                  A aliquid commodi debitis eos harum modi, nostrum quia quod sed, suscipit veritatis voluptas,
+                  voluptates.</p>
+              </div>
+              <a href="#" class="links-red text-decoration read-links mb-20">Read more</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-sm-5 d-none d-sm-block">
+            <div class="dates-tour sidebar-about-fixed">
+              <div class="dates-tour__top">
+                <h3>Tour dates
+                </h3>
+              </div>
+              <div class="dates-tour__body">
+                <h4>Season 2021
+                </h4>
+                <ul class="list-dates-tour">
+									<li>April 16 (Fri) - April 18 (Sun)</li>
+									<li>April 23 (Fri) - April 25 (Sun)</li>
+									<li>April 30 (Fri) - May 02 (Sun)</li>
+									<li>May 07 (Fri) - May 09 (Sun)</li>
+									<li>May 14 (Fri) - May 16 (Sun)</li>
+									<li>May 21 (Fri) - May 23 (Sun)</li>
+									<li>May 28 (Fri) - May 30 (Sun)</li>
+									<li>June 04 (Fri) - June 06 (Sun)</li>
+									<li>June 11 (Fri) - June 13 (Sun)</li>
+									<li>August 13 (Fri) - August 15 (Sun)</li>
+									<li>August 20 (Fri) - August 22 (Sun)</li>
+									<li>September 03 (Fri) - September 05 (Sun)</li>
+                </ul>
+              </div>
+              <div class="dates-tour__bottom">
+                <div class="box-text">
+                  <p>You can choose a date and calculate the cost of the tour for your number of people</p>
+                </div>
+                <a href="booking.html" class="btn btn-orange">Go to booking</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-8">
+
+            <div class="tour-details-info__box tour-details-info__box-price">
+              <h2>Tour cost</h2>
+
+              <div class="prices-tour w100">
+                <div class="prices-tour-box">
+                  <div class="prices-tour-box__row prices-tour-box__row-top">
+                    <div class="prices-tour-box__head"></div>
+                    <div class="prices-tour-box__head">
+                      <div class="prices-tour-box__icon"><img src="assets/images/number-guest1.svg" alt=""></div>
+                      <p>Single occupancy</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="prices-tour-box__icon"><img src="assets/images/number-guest4.svg" alt=""></div>
+                      <p>Double occupancy <br>(price per person)</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="prices-tour-box__icon"><img src="assets/images/number-guest5.svg" alt=""></div>
+                      <p>Accommodation<br>extra bed place</p>
+                    </div>
+                  </div>
+                  <div class="prices-tour-box__row">
+                    <div class="prices-tour-box__row-name prices-tour-box__head">
+                      <div class="prices-tour-box__img"><img src="assets/images/price-tour1.png" alt=""></div>
+                      <ul class="list-rating">
+                        <li>
+                          <svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#star"></use>
+                          </svg>
+                        </li>
+                        <li>
+                          <svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#star"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                      <h4>Guest house "Villa Tatiana"</h4>
+
+                      <a href="#" class="btn btn-border" data-toggle="modal" data-target="#modalTour">More</a>
+                    </div>
+                    <div class="prices-tour-box__head"></div>
+                    <div class="prices-tour-box__head"></div>
+                    <div class="prices-tour-box__head"></div>
+                  </div>
+
+                  <div class="prices-tour-box__row prices-tour-box__line">
+                    <div class="prices-tour-box__head">
+                      <p>Adult</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">12 280 ₽</div>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">9 390 ₽</div>
+                    </div>
+                    <div class="prices-tour-box__head prices-tour-box__border">
+                      <div class="price">9 170 ₽</div>
+                    </div>
+                  </div>
+
+                  <div class="prices-tour-box__row prices-tour-box__line">
+                    <div class="prices-tour-box__head">
+                      <p>Children (0-17)</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price"><span>–</span></div>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">9 390 ₽</div>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">9 170 ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="prices-tour-box">
+                  <div class="prices-tour-box__row prices-tour-box__row-top d-flex d-sm-none">
+                    <div class="prices-tour-box__head"></div>
+                    <div class="prices-tour-box__head">
+                      <div class="prices-tour-box__icon"><img src="assets/images/number-guest1.svg" alt=""></div>
+                      <p>Single occupancy</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="prices-tour-box__icon"><img src="assets/images/number-guest4.svg" alt=""></div>
+                      <p>Double occupancy <br>(price per person)</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="prices-tour-box__icon"><img src="assets/images/number-guest5.svg" alt=""></div>
+                      <p>Accommodation<br>extra bed place</p>
+                    </div>
+                  </div>
+                  <div class="prices-tour-box__row">
+                    <div class="prices-tour-box__row-name prices-tour-box__head">
+                      <div class="prices-tour-box__img"><img src="assets/images/price-tour1.png" alt=""></div>
+                      <ul class="list-rating">
+                        <li>
+                          <svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#star"></use>
+                          </svg>
+                        </li>
+                        <li>
+                          <svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#star"></use>
+                          </svg>
+                        </li>
+                        <li>
+                          <svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#star"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                      <h4>Glamor Villa</h4>
+
+                      <a href="#" class="btn btn-border" data-toggle="modal" data-target="#modalTour">More</a>
+                    </div>
+                    <div class="prices-tour-box__head"></div>
+                    <div class="prices-tour-box__head"></div>
+                    <div class="prices-tour-box__head"></div>
+                  </div>
+
+                  <div class="prices-tour-box__row prices-tour-box__line">
+                    <div class="prices-tour-box__head">
+                      <p>Adult</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">14 220 ₽</div>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">10 110 ₽</div>
+                    </div>
+                    <div class="prices-tour-box__head prices-tour-box__border">
+                      <div class="price">9 890 ₽</div>
+                    </div>
+                  </div>
+
+                  <div class="prices-tour-box__row prices-tour-box__line">
+                    <div class="prices-tour-box__head">
+                      <p>Children (0-17)</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price"><span>–</span></div>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">9 390 ₽</div>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">9 170 ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="prices-tour-box">
+                  <div class="prices-tour-box__row prices-tour-box__row-top d-flex d-sm-none">
+                    <div class="prices-tour-box__head"></div>
+                    <div class="prices-tour-box__head">
+                      <div class="prices-tour-box__icon"><img src="assets/images/number-guest1.svg" alt=""></div>
+                      <p>Single occupancy</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="prices-tour-box__icon"><img src="assets/images/number-guest4.svg" alt=""></div>
+                      <p>Double occupancy <br>(price per person)</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="prices-tour-box__icon"><img src="assets/images/number-guest5.svg" alt=""></div>
+                      <p>Accommodation<br>extra bed place</p>
+                    </div>
+                  </div>
+                  <div class="prices-tour-box__row">
+                    <div class="prices-tour-box__row-name prices-tour-box__head">
+                      <div class="prices-tour-box__img"><img src="assets/images/price-tour1.png" alt=""></div>
+                      <ul class="list-rating">
+                        <li>
+                          <svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#star"></use>
+                          </svg>
+                        </li>
+                        <li>
+                          <svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#star"></use>
+                          </svg>
+                        </li>
+                        <li>
+                          <svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#star"></use>
+                          </svg>
+                        </li>
+                        <li>
+                          <svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#star"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                      <h4>Kaliningrad Hotel</h4>
+
+                      <a href="#" class="btn btn-border" data-toggle="modal" data-target="#modalTour">More</a>
+                    </div>
+                    <div class="prices-tour-box__head"></div>
+                    <div class="prices-tour-box__head"></div>
+                    <div class="prices-tour-box__head"></div>
+                  </div>
+
+                  <div class="prices-tour-box__row prices-tour-box__line">
+                    <div class="prices-tour-box__head">
+                      <p>Adult</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">18 500 ₽</div>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">15 100 ₽</div>
+                    </div>
+                    <div class="prices-tour-box__head prices-tour-box__border">
+                      <div class="price">10 800 ₽</div>
+                    </div>
+                  </div>
+
+                  <div class="prices-tour-box__row prices-tour-box__line">
+                    <div class="prices-tour-box__head">
+                      <p>Children (0-17)</p>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price"><span>–</span></div>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">14 500 ₽</div>
+                    </div>
+                    <div class="prices-tour-box__head">
+                      <div class="price">10 800 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="links-cash text-decoration links-red">Cashback 20%</a>
+            </div>
+
+            <div class="tour-details-info__box">
+              <h2>Tour program</h2>
+
+              <div class="program-box">
+                <h3>Day 1</h3>
+
+                <ul class="program-box__list">
+                  <li>
+                    <div class="program-box-time"></div>
+                    <div class="program-box-description">
+                      <p>Arrival in Kaliningrad at the railway station or airport</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="program-box-time"></div>
+                    <div class="program-box-description">
+                      <p>Transfer to the hotel (optional, extra charge)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="program-box-time">13:30</div>
+                    <div class="program-box-description">
+                      <p>Departure for an excursion from the hotel "Tourist" <br>(A. Nevsky St., 53)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="program-box-time">15:30</div>
+                    <div class="program-box-description">
+                      <p>Departure for a tour from the hotel "Kaliningrad" (Leninsky pr., 81)
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="program-box-time">from 14:00 to 18:00</div>
+                    <div class="program-box-description">
+                      <a href="#" class="links-red text-decoration" data-toggle="modal" data-target="#modalInfoTour">Excursion
+											in Kaliningrad</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="program-box-time">from 18:00 to 19:00</div>
+                    <div class="program-box-description">
+                      <p>Visit the Marzipan Museum at the Brandenburg Gate</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="program-box">
+                <h3>Day 2</h3>
+
+                <ul class="program-box__list">
+                  <li>
+                    <div class="program-box-time"></div>
+                    <div class="program-box-description">
+                      <p>Arrival in Kaliningrad at the railway station or airport</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="program-box-time"></div>
+                    <div class="program-box-description">
+                      <p>Transfer to the hotel (optional, extra charge)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="program-box-time">13:30</div>
+                    <div class="program-box-description">
+                      <p>Departure for an excursion from the hotel "Tourist" (A. Nevsky St., 53)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="program-box-time">15:30</div>
+                    <div class="program-box-description">
+                      <p>Departure for a tour from the hotel "Kaliningrad" (Leninsky pr., 81)
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="program-box-time">from 14:00 to 18:00</div>
+                    <div class="program-box-description">
+                      <p>Excursion around Kaliningrad</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="program-box-time">from 18:00 to 19:00</div>
+                    <div class="program-box-description">
+                      <p>Visit the Marzipan Museum at the Brandenburg Gate</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 d-block d-sm-none">
+            <div class="dates-tour sidebar-about-fixed">
+              <div class="dates-tour__top">
+                <h3>Tour dates
+                </h3>
+              </div>
+              <div class="dates-tour__body">
+                <h4>Season 2021
+                </h4>
+                <ul class="list-dates-tour">
+                  <li>April 16 (Fri) - April 18 (Sun)</li>
+                  <li>April 23 (Fri) - April 25 (Sun)</li>
+                  <li>April 30 (Fri) - May 02 (Sun)</li>
+                  <li>May 07 (Fri) - May 09 (Sun)</li>
+                  <li>May 14 (Fri) - May 16 (Sun)</li>
+                  <li>May 21 (Fri) - May 23 (Sun)</li>
+                  <li>May 28 (Fri) - May 30 (Sun)</li>
+                  <li>June 04 (Fri) - June 06 (Sun)</li>
+                  <li>June 11 (Fri) - June 13 (Sun)</li>
+                  <li>August 13 (Fri) - August 15 (Sun)</li>
+                  <li>August 20 (Fri) - August 22 (Sun)</li>
+                  <li>September 03 (Fri) - September 05 (Sun)</li>
+                </ul>
+              </div>
+              <div class="dates-tour__bottom">
+                <div class="box-text">
+                  <p>You can choose a date and calculate the cost of the tour for your number of people</p>
+                </div>
+                <a href="#" class="btn btn-orange">Go to booking</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="bg-grey information-important">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Important information</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="information-important-box">
+          <h3>Included in the price</h3>
+
+          <ul class="information-important__list">
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon1"></use>
+                </svg>
+              </div>
+              <p>Accommodation in a hotel in Kaliningrad (2 nights)
+              </p>
+            </li>
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon2"></use>
+                </svg>
+              </div>
+              <p>Meals - 2 breakfasts (buffet)
+              </p>
+            </li>
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon3"></use>
+                </svg>
+              </div>
+              <p>Transport and excursion services according to the program</p>
+            </li>
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon4"></use>
+                </svg>
+              </div>
+              <p>All entrance tickets according to the program</p>
+            </li>
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon5"></use>
+                </svg>
+              </div>
+              <p>Free use of the hotel's aqua zone (for Kaiserhof guests)</p>
+            </li>
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon6"></use>
+                </svg>
+              </div>
+              <p>Environmental fees</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="information-important-box">
+          <h3>Not included</h3>
+
+          <ul class="information-important__list">
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon7"></use>
+                </svg>
+              </div>
+              <p>Travel to Kaliningrad and back (air, railway tickets)
+              </p>
+            </li>
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon8"></use>
+                </svg>
+              </div>
+              <p>Dinners
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="information-important-box">
+          <h3>Optional</h3>
+
+          <ul class="information-important__list">
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon9"></use>
+                </svg>
+              </div>
+              <p>Transfers: airport - hotel 850 rubles, railway station - hotel 500 rubles.
+              </p>
+            </li>
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon8"></use>
+                </svg>
+              </div>
+              <p>Lunch according to the program is paid on the spot from 350 rubles per person.
+              </p>
+            </li>
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon8"></use>
+                </svg>
+              </div>
+              <p>Supplement for rooms with a view of the river and the Cathedral (for Hotel Kaiserhof)</p>
+            </li>
+            <li>
+              <div class="information-important__list-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="assets/images/sprite.svg#info-icon1"></use>
+                </svg>
+              </div>
+              <p>Additional nights to the tour</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<div class="button-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <a href="booking.html" class="btn btn-link bg-gradient">Go to tour booking</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="reviews-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Reviews</h2>
+        <div class="all-rating">
+          <svg class="svg-icon">
+            <use xlink:href="assets/images/sprite.svg#star"></use>
+          </svg>
+          <div class="all-rating__val">4.3 (52 reviews)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="reviews-col col-12 col-sm-6 col-lg-5">
+				<div class="reviews-box">
+					<div class="reviews-box__top">
+						<div class="reviews-box__photo"><img src="assets/images/logo-min.svg" alt=""></div>
+						<div class="reviews-box__name">
+							<h4>Andrey</h4>
+							<div class="reviews-box__date">17.01.2021</div>
+						</div>
+					</div>
+					<div class="reviews-box__text">
+						<p>We accidentally discovered this tour on the Mos-Tour website. And now we recommend
+							to all my friends whose children are preschoolers. Cool program, a lot of interactive activities, every
+							kid is
+							surrounded
+							attention and care, and at the same time, the children are all ... <a href="#" class="d-inline read-more">read
+								more</a></p>
+					</div>
+				</div>
+      </div>
+      <div class="reviews-col col-12 col-sm-6 col-lg-5 offset-lg-1">
+				<div class="reviews-box">
+					<div class="reviews-box__top">
+						<div class="reviews-box__photo"><img src="assets/images/logo-min.svg" alt=""></div>
+						<div class="reviews-box__name">
+							<h4>Natalia</h4>
+							<div class="reviews-box__date">05.01.2021</div>
+						</div>
+					</div>
+					<div class="reviews-box__text">
+						<p>Great excursion! Many thanks to Alex, our guide! It was interesting
+							listen to historical facts from various areas. Alexey gives information in a structured way; guide deep
+							immersed in the... <a href="#" class="d-inline read-more">read more</a></p>
+					</div>
+				</div>
+      </div>
+      <div class="reviews-col col-12 col-sm-6 col-lg-5">
+				<div class="reviews-box">
+					<div class="reviews-box__top">
+						<div class="reviews-box__photo"><img src="assets/images/logo-min.svg" alt=""></div>
+						<div class="reviews-box__name">
+							<h4>Olga</h4>
+							<div class="reviews-box__date">24.01.2021</div>
+						</div>
+					</div>
+					<div class="reviews-box__text">
+						<p>Oh, this tour exceeded all expectations! Fascinating interactive
+							robotic patients. They are so realistic to the touch, as if you are saving a living person!!!</p>
+					</div>
+				</div>
+      </div>
+      <div class="reviews-col col-12 col-sm-6 col-lg-5 offset-lg-1">
+				<div class="reviews-box">
+					<div class="reviews-box__top">
+						<div class="reviews-box__photo"><img src="assets/images/logo-min.svg" alt=""></div>
+						<div class="reviews-box__name">
+							<h4>Maria</h4>
+							<div class="reviews-box__date">30.01.2021</div>
+						</div>
+					</div>
+					<div class="reviews-box__text">
+						<p>We accidentally discovered this tour on the Mos-Tour website. And now we recommend
+							to all my friends whose children are preschoolers. Cool program, a lot of interactive activities, every
+							kid is
+							surrounded
+							attention and care, and at the same time, the children are all... <a href="#" class="d-inline read-more">read
+								more</a></p>
+					</div>
+				</div>
+      </div>
+
+      <div class="col-12">
+        <a href="reviews.html" class="btn btn-border btn-load">Show all 52 reviews</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+	<section class="popular-tours">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Popular group tours to Karelia</h2>
+				</div>
+				<div class="col-12 col-md-6 d-none d-sm-flex justify-content-end">
+					<a href="#" class="links-red text-decoration">Show all tours</a>
+				</div>
+			</div>
+	
+			<div class="row">
+				<div class="col-12">
+					<div class="popular-tours-slider">
+						<div class="slide">
+							<div class="tours-card">
+								<ul class="tours-card-labels">
+									<li class="bg-white border-red">SUPERHIT</li>
+									<li class="bg-gradient">CASHBACK 10%</li>
+								</ul>
+								<a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card.png" alt=""></a>
+	
+								<div class="tours-card__body">
+									<div class="tour-rating">
+										<svg class="svg-icon">
+											<use xlink:href="assets/images/sprite.svg#star"></use>
+										</svg>
+										<div class="tour-rating__val">4.3 (52)</div>
+										<p>Group tour</p>
+									</div>
+	
+									<a href="tour-page.html" class="tours-card__location">Tour to Karelia</a>
+									<a href="tour-page.html" class="tours-card__title">"June holidays visiting the northern people"</a>
+									<div class="price">18 330 ₽</div>
+	
+	
+									<a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+										data-target="#modalDetails2">More</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="tours-card">
+								<ul class="tours-card-labels">
+									<li class="bg-white border-red">SUPERHIT</li>
+									<li class="bg-gradient">CASHBACK 10%</li>
+								</ul>
+								<a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card2.png" alt=""></a>
+	
+								<div class="tours-card__body">
+									<div class="tour-rating">
+										<svg class="svg-icon">
+											<use xlink:href="assets/images/sprite.svg#star"></use>
+										</svg>
+										<div class="tour-rating__val">4.3 (52)</div>
+										<p>Group tour</p>
+									</div>
+	
+									<a href="tour-page.html" class="tours-card__location">Tour to Karelia</a>
+									<a href="tour-page.html" class="tours-card__title">"June holidays visiting the northern people"</a>
+									<div class="price">18 330 ₽</div>
+	
+	
+									<a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+										data-target="#modalDetails2">More</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="tours-card">
+								<ul class="tours-card-labels">
+									<li class="bg-white border-red">SUPERHIT</li>
+									<li class="bg-gradient">CASHBACK 10%</li>
+								</ul>
+								<a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card3.jpeg" alt=""></a>
+	
+								<div class="tours-card__body">
+									<div class="tour-rating">
+										<svg class="svg-icon">
+											<use xlink:href="assets/images/sprite.svg#star"></use>
+										</svg>
+										<div class="tour-rating__val">4.3 (52)</div>
+										<p>Group tour</p>
+									</div>
+	
+									<a href="tour-page.html" class="tours-card__location">Tour to Karelia</a>
+									<a href="tour-page.html" class="tours-card__title">"June holidays visiting the northern people"</a>
+									<div class="price">18 330 ₽</div>
+	
+	
+									<a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+										data-target="#modalDetails2">More</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="tours-card">
+								<ul class="tours-card-labels">
+									<li class="bg-white border-red">SUPERHIT</li>
+									<li class="bg-gradient">CASHBACK 10%</li>
+								</ul>
+								<a href="tour-page.html" class="tours-card__img"><img src="assets/images/tour-card4.jpeg" alt=""></a>
+	
+								<div class="tours-card__body">
+									<div class="tour-rating">
+										<svg class="svg-icon">
+											<use xlink:href="assets/images/sprite.svg#star"></use>
+										</svg>
+										<div class="tour-rating__val">4.3 (52)</div>
+										<p>Group tour</p>
+									</div>
+	
+									<a href="tour-page.html" class="tours-card__location">Tour to Karelia</a>
+									<a href="tour-page.html" class="tours-card__title">"June holidays visiting the northern people"</a>
+									<div class="price">18 330 ₽</div>
+	
+	
+									<a href="tour-page.html" class="links-red text-decoration" data-toggle="modal"
+										data-target="#modalDetails2">More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-4 order-lg-1">
+						<div class="footer-box">
+							<span>Multichannel</span>
+							<a href="tel:+70000071313" class="phone">+7 (000) 007-13-13</a>
+							<a href="tel:+70000071313" class="phone">8 (800) 007-13-13</a>
+							<a href="mailto:zakaz-test@gmail.com" class="mail">zakaz-test@gmail.com</a>
+						</div>
+					</div>
+	
+					<div class="col-12 col-md-5 col-lg-3 offset-md-2 offset-lg-1 d-none d-md-flex">
+						<ul class="footer-menu">
+							<li><a href="about.html">About company</a></li>
+							<li><a href="document.html">Juristic documents</a></li>
+							<li><a href="reviews.html">Reviews</a></li>
+						</ul>
+					</div>
+	
+					<div class="col-12 col-md-5 col-lg-4">
+						<ul class="footer-menu">
+							<li><a href="tour-payment.html">Payment Methods</a></li>
+							<li><a href="contacts.html">Contacts</a></li>
+							<li><a href="certificates.html">Gift certificates</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-xl-4 order-xl-1">
+						<ul class="list-social">
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#phone"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#whatsapp"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#telegram"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#vk"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#fb"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#instagram"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#twitter"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="assets/images/sprite.svg#youtube"></use>
+									</svg>
+								</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-xl-8">
+						<ul class="menu-document list-dots">
+							<li>
+								<div class="copyright">© 2006–2023 Mos-Tour Company</div>
+							</li>
+							<li><a href="#">Confidentiality</a></li>
+							<li><a href="#">Conditions</a></li>
+							<li><a href="#">Company details</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<div class="modal fade" id="modalDetails1" tabindex="-1" aria-labelledby="modalDetails1Label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-subtitle">Tour to Kaliningrad</div>
+					<h5 class="modal-title">"Amber wind of the Baltic"</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="assets/images/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="tour-details-modal">
+						<div class="tour-details-modal-box">
+							<h4>Duration</h4>
+							<ul class="list-time-tours list-dots">
+								<li>1 day</li>
+								<li>2 days / 1 night</li>
+								<li>3 days / 2 nights</li>
+								<li>4 days / 3 nights</li>
+								<li>5 days / 4 nights</li>
+								<li>6 days / 5 nights</li>
+								<li>7 days / 6 nights</li>
+								<li>8 days / 7 nights</li>
+							</ul>
+						</div>
+	
+						<div class="tour-details-modal-box">
+							<h4>Season</h4>
+							<ul class="list-season-tours">
+								<li>January</li>
+								<li>February</li>
+								<li>March</li>
+								<li>April</li>
+								<li>May</li>
+								<li>June</li>
+								<li>July</li>
+								<li>August</li>
+								<li>September</li>
+								<li>October</li>
+								<li>November</li>
+								<li>December</li>
+							</ul>
+						</div>
+	
+						<div class="tour-details-modal-box">
+							<h4>Advantages</h4>
+							<ul class="list-dot">
+								<li>Signature double-decker train</li>
+								<li>Breakfast on the veranda of the merchant's dacha</li>
+								<li>Gastronomic excursions</li>
+								<li>Master classes</li>
+								<li>Tastings of national dishes</li>
+								<li>Dinners at popular restaurants</li>
+							</ul>
+						</div>
+	
+						<a href="tour-page.html" class="btn btn-orange btn-details">Go to tour page</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="modalDetails2" tabindex="-1" aria-labelledby="modalDetails2Label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-subtitle">Tour to Kaliningrad</div>
+					<h5 class="modal-title">"Amber wind of the Baltic"</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="assets/images/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="tour-details-modal">
+						<div class="tour-details-modal-box">
+							<h4>Advantages</h4>
+							<ul class="list-dot">
+								<li>Signature double-decker train</li>
+								<li>Breakfast on the veranda of the merchant's dacha</li>
+								<li>Gastronomic excursions</li>
+								<li>Master classes</li>
+								<li>Tastings of national dishes</li>
+								<li>Dinners at popular restaurants</li>
+							</ul>
+						</div>
+	
+						<a href="tour-page.html" class="btn btn-orange btn-details">Go to tour page</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="modal fade modal-info-tour" id="modalInfoTour" tabindex="-1" aria-labelledby="modalInfoTourLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="tour-details-modal">
+          <div class="modal-tour">
+            <h4>This tour participates in the promotion of Rostourism - CASHBACK 20% on the MIR card</h4>
+            <p>Conditions for providing CASHBACK 20% for the promotion of Rostourism - the state subsidy program
+						trips:</p>
+
+            <ul class="list-number">
+              <li>Register your MIR card in <a href="#" class="d-inline text-decoration links-red">program
+							loyalty</a></li>
+              <li>Select tour dates from 03/18/2021 to 06/30/2021 inclusive</li>
+              <li>Pay the full cost of the trip from 03/18/2021 to 06/15/2021</li>
+              <li>with detailed <a href="#" class="d-inline text-decoration links-red">the terms of the promotion, you can
+							check out the link</a></li>
+            </ul>
+          </div>
+
+          <a href="#" class="btn btn-border btn-details" data-dismiss="modal" aria-label="Close">Закрыть</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modal-gallery-tour" id="modalTourGallery" tabindex="-1" aria-labelledby="modalTourGalleryLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="assets/images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-10 offset-lg-1">
+              <div class="modal-gallery__wrap">
+
+                <div class="counter-slide">
+                  <div class="counter-slide__cp">1</div>
+                  <div class="counter-slide__default"></div>
+                </div>
+
+                <div class="tour-slider-max">
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-1.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-2.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-3.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-4.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-5.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-6.png" alt=""></div>
+                  </div>
+                </div>
+
+                <div class="tour-slider-preview">
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-1.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-2.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-3.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-4.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-5.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-6.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modal-gallery-tour" id="modalTour" tabindex="-1" aria-labelledby="modalTourLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="assets/images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-11">
+              <div class="modal-gallery__wrap">
+
+                <div class="counter-slide">
+                  <div class="counter-slide__cp">1</div>
+                  <div class="counter-slide__default"></div>
+                </div>
+
+                <div class="tour-slider-wrapper">
+                  <div class="tour-slider-top">
+                    <div class="tour-slider-title">
+                      <h3>Guest house "Villa Tatiana"</h3>
+                      <ul class="list-rating">
+                        <li>
+                          <svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#star"></use>
+                          </svg>
+                        </li>
+                        <li>
+                          <svg class="svg-icon">
+                            <use xlink:href="assets/images/sprite.svg#star"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <ul class="list-dots">
+                      <li>
+                        <p>Kaliningrad, Verkhneozernaya st., 16A</p>
+                      </li>
+                      <li>
+                        <svg class="svg-icon svg-icon-map">
+                          <use xlink:href="assets/images/sprite.svg#map"></use>
+                        </svg>
+                        <a href="#" class="links-red text-decoration" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalMaps">Look
+												on the map</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tour-slider-max">
+                    <div class="slide">
+                      <div class="tour-slider__item"><img src="assets/images/photo7.png" alt=""></div>
+                    </div>
+                    <div class="slide">
+                      <div class="tour-slider__item"><img src="assets/images/photo1-1.png" alt=""></div>
+                    </div>
+                    <div class="slide">
+                      <div class="tour-slider__item"><img src="assets/images/photo1-2.png" alt=""></div>
+                    </div>
+                    <div class="slide">
+                      <div class="tour-slider__item"><img src="assets/images/photo1-3.png" alt=""></div>
+                    </div>
+                    <div class="slide">
+                      <div class="tour-slider__item"><img src="assets/images/photo1-4.png" alt=""></div>
+                    </div>
+                    <div class="slide">
+                      <div class="tour-slider__item"><img src="assets/images/photo1-5.png" alt=""></div>
+                    </div>
+                    <div class="slide">
+                      <div class="tour-slider__item"><img src="assets/images/photo1-6.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="tour-slider-info">
+										<div class="box-text">
+											<p>Do you know that it is the Finno-Ugric peoples living in the Cis-Urals (Udmurts, Komi-Permyaks),
+												can historically claim to be the inventors of everyone's favorite dumplings? AND
+												proof of this is the word "Pelnyan", which means "bread ear".</p>
+											<p>We invite you for the weekend to go to a bright and memorable gastronomic
+												journey
+												to Udmurtia!</p>
+											<p>On this exciting trip to Izhevsk, you will taste the best dishes of the national cuisine of Udmurtia,
+												you yourself will become a chef at a culinary master class, visit...</p>
+										</div>
+                  </div>
+                </div>
+
+
+                <div class="tour-slider-preview">
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-1.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-2.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-3.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-4.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-5.png" alt=""></div>
+                  </div>
+                  <div class="slide">
+                    <div class="tour-slider__item"><img src="assets/images/photo1-6.png" alt=""></div>
+                  </div>
+                </div>
+
+                <div class="tour-slider-info d-flex d-md-none">
+                  <div class="row">
+                  <div class="col-12 col-sm-6">
+										<div class="box-text">
+											<p>Do you know that it is the Finno-Ugric peoples living in the Cis-Urals (Udmurts, Komi-Permyaks),
+												can historically claim to be the inventors of everyone's favorite dumplings? AND
+												proof of this is the word "Pelnyan", which means "bread ear".</p>
+											<p>We invite you for the weekend to go to a bright and memorable gastronomic
+												journey
+												to Udmurtia!</p>
+											<p>On this exciting trip to Izhevsk, you will taste the best dishes of the national cuisine of Udmurtia,
+												you yourself will become a chef at a culinary master class, visit...</p>
+										</div>
+                  </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="box-text">
+                        <p>Do you know that it is the Finno-Ugric peoples living in the Cis-Urals (Udmurts, Komi-Permyaks),
+												can historically claim to be the inventors of everyone's favorite dumplings? AND
+												proof of this is the word "Pelnyan", which means "bread ear".</p>
+                        <p>We invite you for the weekend to go to a bright and memorable gastronomic
+												journey
+												to Udmurtia!</p>
+                        <p>On this exciting trip to Izhevsk, you will taste the best dishes of the national cuisine of Udmurtia,
+												you yourself will become a chef at a culinary master class, visit...</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modal-gallery-tour modal-gallery-map" id="modalMaps" tabindex="-1" aria-labelledby="modalMapsLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="map-location-tour">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.849184734447!2d37.44998497695224!3d55.830576973113104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5480a60db30dd%3A0x2e83885b22531fe1!2z0YPQuy4g0KHQstC-0LHQvtC00YssIDEz0JAsIDIg0Y3RgtCw0LYsINCd0LDRgNC-LdCk0L7QvNC40L3RgdC6LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDE0MzMwMA!5e0!3m2!1sru!2sua!4v1688476192144!5m2!1sru!2sua"
+						style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <svg class="svg-icon">
+          <use xlink:href="assets/images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+ <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/jquery/jquery-ui.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/slick/slick.min.js"></script>
+  <script src="assets/vendor/select2/select2.min.js"></script>
+  <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+  <script src="assets/js/common.js"></script>
+</body>
+</html>
