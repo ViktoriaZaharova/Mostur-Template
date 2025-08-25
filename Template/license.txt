@@ -1,0 +1,9 @@
+License Information:
+
+1. HTML/CSS/JS code - Exclusive license (you are free to use it in your projects).
+2. Fonts (WOFF2) - Licensed under SIL Open Font License or equivalent (please check included font license files).
+3. Icons - Free for commercial use (Font Awesome or included set).
+4. Images - For demo purposes only. Replace with your own licensed images before publishing.
+
+TemplateMonster License:
+This item is licensed exclusively for sale on TemplateMonster marketplace.

@@ -5,8 +5,8 @@ $(document).ready(function () {
         fade: true,
         infinite: false,
         appendArrows: '.about-tour-slider__nav',
-        prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="assets/images/sprite.svg#arrow-left"></use></svg></button>',
-        nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="assets/images/sprite.svg#arrow-right"></use></svg></button>'
+        prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+        nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>'
     });
 
     $('.tours-card-slider').slick({
@@ -24,8 +24,8 @@ $(document).ready(function () {
         arrows: true,
         fade: true,
         asNavFor: '.tour-slider-preview',
-        prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="assets/images/sprite.svg#arrow-left"></use></svg></button>',
-        nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="assets/images/sprite.svg#arrow-right"></use></svg></button>'
+        prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+        nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>'
     });
 
     $('.tour-slider-preview').slick({
@@ -101,8 +101,8 @@ $(window).on('load resize', function () {
 $('.popular-tours-slider').slick({
     slidesToShow: 3,
     arrows: true,
-    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="assets/images/sprite.svg#arrow-left"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="assets/images/sprite.svg#arrow-right"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
     responsive: [
         {
             breakpoint: 992,
